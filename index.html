@@ -4,676 +4,720 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukesh_360</title>
+    <title>Mukesh Kumar R — Data &amp; AI Engineer</title>
     <meta name="description"
-        content="Portfolio of Mukesh Kumar R — Full Stack Developer passionate about building intelligent, user-centered digital solutions with Python, Flask, FastAPI, and modern web technologies.">
+        content="Mukesh Kumar R is a Data & AI Engineer building data pipelines, RAG systems and LLM-powered products. Currently at Markus.ai, Bangalore.">
+    <meta name="author" content="Mukesh Kumar R">
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
 
-    <!-- Google Fonts -->
+    <!-- Social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mukesh Kumar R — Data & AI Engineer">
+    <meta property="og:description"
+        content="Data pipelines, RAG systems and LLM-powered products. Currently at Markus.ai, Bangalore.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111110'/%3E%3Ctext x='29' y='44' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='34' fill='%23fff'%3EM%3C/text%3E%3Ccircle cx='50' cy='42' r='4' fill='%23ff6b35'/%3E%3C/svg%3E">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mukesh Kumar R",
+        "jobTitle": "Data & AI Engineer Intern",
+        "knowsAbout": ["Data Engineering", "Machine Learning", "Retrieval-Augmented Generation", "Full Stack Development"],
+        "worksFor": { "@type": "Organization", "name": "Markus.ai" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+        "alumniOf": "Coimbatore Institute of Technology",
+        "email": "mailto:mukesh360r@gmail.com",
+        "sameAs": ["https://github.com/mukesh360", "https://www.linkedin.com/in/mukeshkumar360"]
+    }
+    </script>
+
+    <script>
+        document.documentElement.classList.add('js');
+        // Show the loader on every load/reload (set before paint, so no flash)
+        document.documentElement.classList.add('first-visit', 'is-loading');
+        // Failsafe: if script.js never runs, drop the JS-only states so the
+        // page shows fully (no stuck loader, no hidden content).
+        setTimeout(() => {
+            if (!window.__siteReady) document.documentElement.classList.remove('js', 'is-loading', 'first-visit');
+        }, 5000);
+        try {
+            const t = localStorage.getItem('theme');
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Custom CSS -->
+    <link rel="preconnect" href="https://api.github.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- ===== NAVBAR ===== -->
-    <section id="home">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container justify-content-center">
-                <div class="nav-wrapper">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <!-- Loading screen (shown on every load/reload; see head script) -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <span class="spinner"></span>
+            <p class="loader-name">Mukesh Kumar R<span class="accent-dot">.</span></p>
+            <p class="loader-sub mono">Data &amp; AI Engineer</p>
+        </div>
+    </div>
 
-                    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#home">
-                                    <i class="fa-solid fa-house"></i> Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">
-                                    <i class="fa-solid fa-id-card"></i> About
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">
-                                    <i class="fa-solid fa-code"></i> Skills
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">
-                                    <i class="fa-solid fa-folder-open"></i> Projects
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">
-                                    <i class="fa-solid fa-envelope"></i> Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="top">
+        <div class="wrap header-inner">
+            <a href="#top" class="wordmark">Mukesh Kumar R</a>
+
+            <nav class="nav" id="nav" aria-label="Primary">
+                <a href="#about"><span class="mono">01</span> About</a>
+                <a href="#experience"><span class="mono">02</span> Experience</a>
+                <a href="#work"><span class="mono">03</span> Work</a>
+                <a href="#stack"><span class="mono">04</span> Stack</a>
+                <a href="#contact"><span class="mono">05</span> Contact</a>
+                <span class="nav-indicator" aria-hidden="true"></span>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cmdk-trigger" type="button" aria-label="Open command menu" aria-haspopup="dialog">
+                    <span>Search</span><kbd data-kbd>⌘K</kbd>
+                </button>
+                <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+                    <span class="theme-dot"></span>
+                </button>
+                <a class="btn btn-small"
+                    href="https://drive.google.com/drive/folders/1-S04FxanC22qKMmrHC989dE0iaqY432G?usp=sharing"
+                    target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">
+                    <span class="menu-label">Menu</span>
+                </button>
             </div>
-        </nav>
-    </section>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </header>
 
+    <main id="main">
 
-    <!-- ===== HERO SECTION ===== -->
-    <section id="hero"
-        class="hero container py-5 d-flex align-items-center justify-content-between flex-column flex-md-row">
-
-        <!-- Animated Background -->
-        <div class="hero-bg-grid"></div>
-
-        <!-- Left Content -->
-        <div class="hero-text col-md-6 fade-in-up">
-            <h1>Hi, I'm <span class="gradient-text">Mukesh Kumar R</span></h1>
-            <h2 class="typing-text">Full Stack Developer</h2>
-
-            <p>
-                I'm currently pursuing my degree in Artificial Intelligence and Data Science at Coimbatore Institute of
-                Technology (CIT), Coimbatore.
-                I'm passionate about blending creativity and technology to develop intelligent, user-centered digital
-                solutions.
+        <!-- ===== HERO ===== -->
+        <section class="hero wrap" aria-label="Introduction">
+            <p class="hero-kicker mono intro" style="--i:0">
+                <span class="status-dot" aria-hidden="true"></span>
+                Data &amp; AI Engineer at Markus.ai
             </p>
 
-            <div class="hero-badges">
-                <span class="hero-badge">
-                    <i class="fa-solid fa-location-dot"></i> Coimbatore, India
-                </span>
-                <span class="hero-badge">
-                    <span class="pulse-dot"></span> Available for Work
-                </span>
+            <h1 class="hero-title">
+                <span class="line"><span class="intro" style="--i:1">Mukesh Kumar R<span class="accent-dot">.</span></span></span>
+            </h1>
+
+            <p class="hero-lede intro" style="--i:2">
+                I build the systems between <em>raw data and useful AI</em>: pipelines that make data
+                reliable, and retrieval and LLM features that put it to work.
+            </p>
+
+            <div class="hero-actions intro" style="--i:3">
+                <a class="btn" href="#work">View selected work <span aria-hidden="true">→</span></a>
+                <a class="btn btn-ghost" href="#contact">Get in touch</a>
             </div>
 
-            <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
-                <a href="https://drive.google.com/drive/folders/1-S04FxanC22qKMmrHC989dE0iaqY432G?usp=sharing"
-                    target="_blank" class="btn-gradient">
-                    <i class="fa-solid fa-download"></i> Download Resume
-                </a>
-                <a href="#projects" class="btn-outline-glass">
-                    <i class="fa-solid fa-eye"></i> View Projects
-                </a>
-            </div>
-
-            <hr />
-
-            <div class="socials">
-                <span>Follow me</span>
-                <a href="https://github.com/mukesh360" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:mukesh360r@gmail.com" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mukeshkumar360" target="_blank" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://wa.me/918610448916" target="_blank" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Right Side: Codefolio -->
-        <div class="hero-img col-md-5 mt-5 mt-md-0 text-center fade-in-up">
-            <h2 class="fw-bold mb-4">Visit My Code Folio</h2>
-
-            <a href="https://codolio.com/profile/Mukesh_360" target="_blank" class="codefolio-link">
-                <div class="codefolio-icon d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-code"></i>
+            <dl class="hero-meta intro" style="--i:4">
+                <div>
+                    <dt>Currently</dt>
+                    <dd>Data &amp; AI Engineer Intern <span class="meta-sub mono">Markus.ai</span></dd>
                 </div>
-                <p class="mt-3 mb-0 fw-semibold">Mukesh_360</p>
-            </a>
-        </div>
-    </section>
+                <div>
+                    <dt>Experience</dt>
+                    <dd><span data-tenure>3 mos</span> in industry <span class="meta-sub mono">Since <span data-since>Aug 2026</span></span></dd>
+                </div>
+                <div>
+                    <dt>Based in</dt>
+                    <dd>Bangalore, India <span class="meta-sub mono"><span data-clock></span> IST</span></dd>
+                </div>
+                <div>
+                    <dt>Focus</dt>
+                    <dd>Data pipelines, RAG, LLMs <span class="meta-sub mono">Python · SQL · LangChain</span></dd>
+                </div>
+            </dl>
+
+            <!-- Signature visual: the data → AI pipeline -->
+            <figure class="hero-fig intro" style="--i:6">
+                <div class="fig-scroll">
+                    <svg class="pipeline" viewBox="0 0 1100 190" role="img"
+                        aria-labelledby="pipeTitle pipeDesc">
+                        <title id="pipeTitle">From raw data to grounded answers</title>
+                        <desc id="pipeDesc">Six stages: sources, ingest and transform are data engineering; embed,
+                            retrieve and LLM are AI engineering.</desc>
+
+                        <!-- discipline brackets -->
+                        <g class="pipe-bracket">
+                            <path d="M0 34 V24 H530 V34" />
+                            <text x="0" y="12">Data engineering</text>
+                        </g>
+                        <g class="pipe-bracket pipe-bracket--ai">
+                            <path d="M570 34 V24 H1100 V34" />
+                            <text x="570" y="12">AI engineering</text>
+                        </g>
+
+                        <!-- flow line + moving packets (drawn beneath nodes) -->
+                        <path class="pipe-line" d="M0 112 H1100" />
+                        <g class="pipe-packets">
+                            <circle r="3.5"><animateMotion dur="7s" repeatCount="indefinite" begin="0s" path="M0,112 H1100" /></circle>
+                            <circle r="3.5"><animateMotion dur="7s" repeatCount="indefinite" begin="-1.75s" path="M0,112 H1100" /></circle>
+                            <circle r="3.5"><animateMotion dur="7s" repeatCount="indefinite" begin="-3.5s" path="M0,112 H1100" /></circle>
+                            <circle r="3.5"><animateMotion dur="7s" repeatCount="indefinite" begin="-5.25s" path="M0,112 H1100" /></circle>
+                        </g>
+
+                        <!-- stages -->
+                        <g class="pipe-node" transform="translate(0 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">01</text>
+                            <text class="n-title" x="14" y="50">Sources</text>
+                            <text class="n-sub" x="14" y="68">PDF · CSV · APIs</text>
+                        </g>
+                        <g class="pipe-node" transform="translate(190 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">02</text>
+                            <text class="n-title" x="14" y="50">Ingest</text>
+                            <text class="n-sub" x="14" y="68">Extract · validate</text>
+                        </g>
+                        <g class="pipe-node" transform="translate(380 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">03</text>
+                            <text class="n-title" x="14" y="50">Transform</text>
+                            <text class="n-sub" x="14" y="68">Clean · chunk</text>
+                        </g>
+                        <g class="pipe-node" transform="translate(570 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">04</text>
+                            <text class="n-title" x="14" y="50">Embed</text>
+                            <text class="n-sub" x="14" y="68">Vectors</text>
+                        </g>
+                        <g class="pipe-node" transform="translate(760 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">05</text>
+                            <text class="n-title" x="14" y="50">Retrieve</text>
+                            <text class="n-sub" x="14" y="68">Vector search</text>
+                        </g>
+                        <g class="pipe-node pipe-node--out" transform="translate(950 70)">
+                            <rect width="150" height="84" rx="10" />
+                            <text class="n-idx" x="14" y="22">06</text>
+                            <text class="n-title" x="14" y="50">LLM</text>
+                            <text class="n-sub" x="14" y="68">Grounded answer</text>
+                        </g>
+                    </svg>
+                </div>
+                <figcaption class="mono">Fig. 1: The work, from raw data to grounded answers<span class="swipe-hint"> · Swipe →</span></figcaption>
+            </figure>
+        </section>
 
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="about-section py-5">
-        <div class="container">
-            <div class="row align-items-center g-5">
+        <!-- ===== 01 ABOUT ===== -->
+        <section id="about" class="section wrap" data-animate>
+            <header class="sec-head">
+                <span class="sec-num mono">01</span>
+                <span class="sec-rule" aria-hidden="true"></span>
+                <h2 class="sec-title"><span>About</span></h2>
+                <p class="sec-sub">Who I am and what I work on.</p>
+            </header>
 
-                <!-- Left Content -->
-                <div class="col-md-7 fade-in-up">
-                    <h6 class="section-label">About Me</h6>
-                    <h2 class="section-title">Who I Am</h2>
-                    <hr class="gradient-divider mb-4">
-
-                    <p class="lead">
-                        I'm <strong>Mukesh Kumar R</strong>, a passionate developer who loves creating clean,
-                        responsive,
-                        and efficient web applications. With experience in <b>Python, Flask, FastAPI, Java, and Modern
-                            Web Development</b>,
-                        I enjoy transforming ideas into elegant digital solutions.
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p class="big reveal">
+                        Good AI starts with good data. I work on both halves: getting data
+                        <em>clean and dependable</em>, then turning it into features people rely on.
                     </p>
-
-                    <p>
-                        I focus on building full-stack web applications that are not only functional but also visually
-                        appealing.
-                        My goal is to write maintainable, scalable code and keep improving through learning and
-                        experimentation.
+                    <p class="reveal">
+                        I'm a Data &amp; AI Engineer intern at Markus.ai in Bangalore, and a student of
+                        Artificial Intelligence and Data Science at Coimbatore Institute of Technology.
+                        Day to day that means Python, SQL, and building out the data and model layers
+                        behind AI products.
                     </p>
+                    <p class="reveal">
+                        Outside work I build retrieval-augmented systems end to end: ingestion, chunking,
+                        embeddings, vector search, local inference with Ollama, and the FastAPI and Supabase
+                        services around them.
+                    </p>
+                </div>
 
-                    <div class="row mt-4 g-3">
-                        <div class="col-sm-6">
-                            <div class="info-item">
-                                <i class="fa-solid fa-user-tie"></i>
-                                <span><strong>Name:</strong> Mukesh Kumar R</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-item">
-                                <i class="fa-solid fa-briefcase"></i>
-                                <span><strong>Role:</strong> Full Stack Developer,ML Engineer</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span><strong>Location:</strong> Coimbatore, TN</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-item">
-                                <i class="fa-solid fa-envelope"></i>
-                                <span><strong>Email:</strong> mukesh360r@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="https://github.com/mukesh360" target="_blank" class="btn-gradient mt-4">
-                        <i class="fa-solid fa-arrow-right"></i> View My Work on GitHub
+                <aside class="about-side reveal">
+                    <a class="codolio" href="https://codolio.com/profile/Mukesh_360" target="_blank" rel="noopener">
+                        <span class="mono codolio-label">Problem solving</span>
+                        <span class="codolio-handle">Codolio / Mukesh_360</span>
+                        <span class="codolio-arrow" aria-hidden="true">↗</span>
                     </a>
-                </div>
-
-                <!-- Right: Animated Icon Ring -->
-                <div class="col-md-5 text-center fade-in-up">
-                    <div class="about-icon-ring mx-auto">
-                        <div class="about-icon-container">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ===== SKILLS SECTION ===== -->
-    <section id="skills" class="skills-section py-5 text-center">
-        <div class="container">
-            <h6 class="section-label">Skills</h6>
-            <h2 class="section-title mb-2">Technologies I Work With</h2>
-            <hr class="gradient-divider mx-auto mb-5">
-
-            <div class="row gy-4 justify-content-center stagger-children">
-                <!-- Python -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-python"></i>
-                        <h5>Python</h5>
-                    </div>
-                </div>
-
-                <!-- Java -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-java"></i>
-                        <h5>Java</h5>
-                    </div>
-                </div>
-
-                <!-- C -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-solid fa-c"></i>
-                        <h5>C</h5>
-                    </div>
-                </div>
-
-                <!-- Flask -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-solid fa-flask"></i>
-                        <h5>Flask</h5>
-                    </div>
-                </div>
-
-                <!-- HTML -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-html5"></i>
-                        <h5>HTML</h5>
-                    </div>
-                </div>
-
-                <!-- CSS -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h5>CSS</h5>
-                    </div>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-js"></i>
-                        <h5>JavaScript</h5>
-                    </div>
-                </div>
-
-                <!-- Bootstrap -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <h5>Bootstrap</h5>
-                    </div>
-                </div>
-
-                <!-- MySQL -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-solid fa-database"></i>
-                        <h5>MySQL</h5>
-                    </div>
-                </div>
-
-                <!-- GitHub -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-brands fa-github"></i>
-                        <h5>GitHub</h5>
-                    </div>
-                </div>
-
-                <!-- FastAPI -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-solid fa-bolt"></i>
-                        <h5>FastAPI</h5>
-                    </div>
-                </div>
-
-                <!-- Supabase -->
-                <div class="col-6 col-md-4 col-lg-3 fade-in-up">
-                    <div class="skill-card p-4">
-                        <i class="fa-solid fa-database"></i>
-                        <h5>Supabase</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects" class="projects-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="section-label">My Work</h6>
-                <h2 class="section-title mb-2">Projects</h2>
-                <hr class="gradient-divider mx-auto">
-            </div>
-
-            <div class="row g-4">
-                <!-- 1) Flask PDF Summarizer -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <article class="project-card p-4 h-100">
-                        <div>
-                            <div class="project-icon">
-                                <i class="fa-solid fa-flask"></i>
-                            </div>
-                            <h4 class="project-title">Flask PDF Summarizer</h4>
-                            <p class="project-desc">A Flask app that extracts text from uploaded PDFs, runs semantic
-                                embeddings and returns concise answers and summaries.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Flask</span>
-                                <span class="tag">NLP</span>
-                                <span class="tag">Embeddings</span>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com/mukesh360/Intern_projects" target="_blank" class="btn-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://github.com/mukesh360" target="_blank" rel="noopener">
+                                GitHub <span class="gh-count mono" data-gh-repos></span><span>↗</span>
                             </a>
-                            <a href="#" target="_blank" class="btn-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- 2) Aniverse -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <article class="project-card p-4 h-100">
-                        <div>
-                            <div class="project-icon">
-                                <i class="fa-solid fa-film"></i>
-                            </div>
-                            <h4 class="project-title">Aniverse — Anime Trailers</h4>
-                            <p class="project-desc">A streaming-style landing site showcasing anime trailers with smooth
-                                UI and responsive layouts.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Bootstrap</span>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com/mukesh360/Aniverse" target="_blank" class="btn-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                            <a href="https://aniversetrailer.netlify.app/" target="_blank" class="btn-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- 3) Portfolio -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <article class="project-card p-4 h-100">
-                        <div>
-                            <div class="project-icon">
-                                <i class="fa-solid fa-laptop-code"></i>
-                            </div>
-                            <h4 class="project-title">Personal Portfolio</h4>
-                            <p class="project-desc">This stunning portfolio site — responsive layout, dark glassmorphism
-                                design, smooth animations and modern aesthetics.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">Bootstrap</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com/mukesh360/Portfolio" target="_blank" class="btn-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                            <a href="#" target="_blank" class="btn-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- 4) Document Question Answering System -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <article class="project-card p-4 h-100">
-                        <div>
-                            <div class="project-icon">
-                                <i class="fa-solid fa-robot"></i>
-                            </div>
-                            <h4 class="project-title">DocIntel AI — RAG Chatbot</h4>
-                            <p class="project-desc">A Retrieval-Augmented Generation chatbot for answering user queries
-                                from uploaded documents, with Supabase Auth and local LLM inference via Ollama.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">Supabase</span>
-                                <span class="tag">Ollama</span>
-                                <span class="tag">RAG</span>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com/mukesh360" target="_blank" class="btn-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                            <a href="#" target="_blank" class="btn-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- 5) Smart Home Automation System -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <article class="project-card p-4 h-100">
-                        <div>
-                            <div class="project-icon">
-                                <i class="fa-solid fa-house-signal"></i>
-                            </div>
-                            <h4 class="project-title">Smart Home Automation</h4>
-                            <p class="project-desc">An IoT-based smart home system using ESP8266 NodeMCU, relay modules,
-                                and PIR motion sensors with remote monitoring and control via smartphone.</p>
-                            <div class="project-tags">
-                                <span class="tag">IoT</span>
-                                <span class="tag">ESP8266</span>
-                                <span class="tag">Arduino</span>
-                                <span class="tag">Sensors</span>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com/mukesh360" target="_blank" class="btn-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                            <a href="#" target="_blank" class="btn-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="section-label">Contact</h6>
-                <h2 class="section-title mb-2">Get in Touch</h2>
-                <hr class="gradient-divider mx-auto">
-            </div>
-
-            <div class="row align-items-start gy-4">
-                <!-- Left Info -->
-                <div class="col-md-6 fade-in-up">
-                    <p class="mb-4">
-                        I'm always open to discuss exciting projects and new opportunities. Let's collaborate and build
-                        something amazing together!
-                    </p>
-
-                    <ul class="list-unstyled contact-info mb-4">
-                        <li class="mb-3">
-                            <i class="fa-solid fa-envelope me-3"></i> mukesh360r@gmail.com
                         </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-phone me-3"></i> +91 8610448916
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-location-dot me-3"></i> Coimbatore, Tamil Nadu, India
-                        </li>
+                        <li><a href="https://www.linkedin.com/in/mukeshkumar360" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
+                        <li><a href="https://wa.me/918610448916" target="_blank" rel="noopener">WhatsApp <span>↗</span></a></li>
                     </ul>
+                </aside>
+            </div>
 
-                    <div class="social-links d-flex gap-3">
-                        <a href="https://github.com/mukesh360" target="_blank" aria-label="GitHub">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mukeshkumar360" target="_blank" aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://wa.me/918610448916" target="_blank" aria-label="WhatsApp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
+            <dl class="stats">
+                <div class="stat reveal">
+                    <dt class="mono">Months in industry</dt>
+                    <dd><span class="stat-num" data-count data-tenure-months>3</span></dd>
                 </div>
+                <div class="stat reveal">
+                    <dt class="mono">Public repositories</dt>
+                    <dd><span class="stat-num" data-count data-gh-repo-count>16</span></dd>
+                </div>
+                <div class="stat reveal">
+                    <dt class="mono">AI &amp; ML projects built</dt>
+                    <dd><span class="stat-num" data-count data-ai-count>4</span></dd>
+                </div>
+            </dl>
+        </section>
 
-                <!-- Right Form -->
-                <div class="col-md-6 fade-in-up">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <input type="text" id="contactName" class="form-control" placeholder="Your Name" required>
+
+        <!-- ===== 02 EXPERIENCE ===== -->
+        <section id="experience" class="section wrap" data-animate>
+            <header class="sec-head">
+                <span class="sec-num mono">02</span>
+                <span class="sec-rule" aria-hidden="true"></span>
+                <h2 class="sec-title"><span>Experience</span></h2>
+                <p class="sec-sub">Where I work and study. Dates, duration and progress update automatically.</p>
+            </header>
+
+            <ol class="timeline">
+                <!-- Dates, duration and progress are computed from CONFIG.roleStart in script.js -->
+                <li class="role reveal">
+                    <span class="role-idx mono">/01</span>
+                    <div class="role-body">
+                        <h3 class="role-title">Data &amp; AI Engineer Intern <span class="at">·</span> Markus.ai</h3>
+                        <p class="role-where mono">Bangalore, India · One-year internship</p>
+
+                        <!-- fills one tick per month, automatically -->
+                        <div class="tenure-track" data-track aria-hidden="true">
+                            <div class="ticks"></div>
+                            <p class="mono track-label"></p>
                         </div>
-                        <div class="mb-3">
-                            <input type="email" id="contactEmail" class="form-control" placeholder="Your Email"
-                                required>
+                        <ul class="role-points">
+                            <li><strong>Data engineering:</strong> build and maintain pipelines that ingest, clean
+                                and structure the data behind Markus.ai's AI products.</li>
+                            <li><strong>AI / ML:</strong> develop LLM-powered features in Python, covering retrieval,
+                                prompt design and output evaluation.</li>
+                            <li><strong>Full stack:</strong> build the APIs and interfaces that put those features in
+                                front of users, from prototype to production.</li>
+                        </ul>
+                        <ul class="chips">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Data pipelines</li>
+                            <li>LLMs</li>
+                            <li>RAG</li>
+                            <li>Full stack</li>
+                        </ul>
+                    </div>
+                    <div class="role-when mono">
+                        <span class="now"><span class="status-dot" aria-hidden="true"></span>Current</span>
+                        <span class="role-dates" data-range>Aug 2026 — Present</span>
+                        <span class="role-tenure" data-tenure>3 mos</span>
+                    </div>
+                </li>
+
+                <li class="role reveal">
+                    <span class="role-idx mono">/02</span>
+                    <div class="role-body">
+                        <h3 class="role-title">B.Tech, Artificial Intelligence &amp; Data Science</h3>
+                        <p class="role-where mono">Coimbatore Institute of Technology · Coimbatore</p>
+                        <p class="role-desc">
+                            Coursework in machine learning, data structures, databases and statistics.
+                            Most of the projects below started here.
+                        </p>
+                    </div>
+                    <div class="role-when mono">
+                        <span class="role-kind">Education</span>
+                        <span class="role-dates">In progress</span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+
+        <!-- ===== 03 WORK ===== -->
+        <section id="work" class="section wrap" data-animate>
+            <header class="sec-head">
+                <span class="sec-num mono">03</span>
+                <span class="sec-rule" aria-hidden="true"></span>
+                <h2 class="sec-title"><span>Selected work</span></h2>
+                <p class="sec-sub">Projects I have built, with live activity pulled from GitHub.</p>
+            </header>
+
+            <ul class="projects">
+                <li class="project project--featured reveal" data-repo="RAG-BOT-" data-ai>
+                    <span class="project-idx mono">/01</span>
+                    <div class="project-main">
+                        <p class="feat-label mono">Featured project</p>
+                        <h3 class="project-title">DocIntel AI</h3>
+                        <p class="project-desc">
+                            Multi-agent RAG platform. Each agent gets its own isolated vector store, so a
+                            "Legal" agent never answers from a "Study" agent's documents. Answers are
+                            grounded strictly in retrieved context and run locally on Ollama.
+                        </p>
+                        <ul class="feat-points">
+                            <li><strong>Isolated</strong> vector store per agent, no cross-domain answers</li>
+                            <li><strong>5 formats</strong> ingested: PDF, DOCX, CSV, TXT, HTML</li>
+                            <li><strong>Local</strong> inference on Ollama (qwen2.5:7b), with no external LLM API</li>
+                        </ul>
+                        <p class="project-tags mono">FastAPI · LangChain · ChromaDB · Ollama · Supabase<span
+                                class="gh-meta" data-gh-meta></span></p>
+                        <div class="project-links">
+                            <a href="https://github.com/mukesh360/RAG-BOT-" target="_blank" rel="noopener">View code <span>↗</span></a>
                         </div>
-                        <div class="mb-3">
-                            <textarea rows="4" id="contactMessage" class="form-control" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn-gradient">
-                            <i class="fa-solid fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                    </div>
+                    <figure class="feat-fig" aria-hidden="true">
+                        <svg viewBox="0 0 320 220">
+                            <text class="pv-cap" x="20" y="28">AGENTS → ISOLATED STORES</text>
+                            <g transform="translate(0 56)">
+                                <rect class="pv-box" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Legal</text>
+                                <path class="pv-ln" d="M116 15 H220" /><path class="pv-ln" d="M212 10 L220 15 L212 20" />
+                                <ellipse class="pv-box" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                            </g>
+                            <g transform="translate(0 106)">
+                                <rect class="pv-box pv-hi" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Study</text>
+                                <path class="pv-acc-ln feat-flow" d="M116 15 H220" /><path class="pv-acc-ln" d="M212 10 L220 15 L212 20" />
+                                <ellipse class="pv-box pv-hi" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box pv-hi" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                            </g>
+                            <g transform="translate(0 156)">
+                                <rect class="pv-box" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Project X</text>
+                                <path class="pv-ln" d="M116 15 H220" /><path class="pv-ln" d="M212 10 L220 15 L212 20" />
+                                <ellipse class="pv-box" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                            </g>
+                        </svg>
+                        <figcaption class="mono">Query routed to the "Study" agent's store only</figcaption>
+                    </figure>
+                </li>
+
+                <li class="project reveal" data-repo="PsychTrend" data-ai>
+                    <span class="project-idx mono">/02</span>
+                    <div class="project-main">
+                        <h3 class="project-title">PsychTrend</h3>
+                        <p class="project-desc">
+                            Conversational system that collects personal experiences through adaptive
+                            questioning, then runs sentiment analysis, K-Means clustering and trend detection
+                            to produce non-clinical behavioural insights and predictions.
+                        </p>
+                        <p class="project-tags mono">FastAPI · scikit-learn · Pandas · SQLite<span class="gh-meta"
+                                data-gh-meta></span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mukesh360/PsychTrend" target="_blank" rel="noopener">Code <span>↗</span></a>
+                    </div>
+                </li>
+
+                <li class="project reveal" data-repo="Mintues-of-the-Meeting" data-ai>
+                    <span class="project-idx mono">/03</span>
+                    <div class="project-main">
+                        <h3 class="project-title">Minutes of Meeting AI</h3>
+                        <p class="project-desc">
+                            An AI assistant that turns meeting conversations into structured minutes,
+                            built on the Gemini API.
+                        </p>
+                        <p class="project-tags mono">TypeScript · Gemini API · LLMs<span class="gh-meta"
+                                data-gh-meta></span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mukesh360/Mintues-of-the-Meeting" target="_blank" rel="noopener">Code <span>↗</span></a>
+                    </div>
+                </li>
+
+                <li class="project reveal" data-repo="Intern_projects" data-ai>
+                    <span class="project-idx mono">/04</span>
+                    <div class="project-main">
+                        <h3 class="project-title">PDF Summarizer</h3>
+                        <p class="project-desc">
+                            Flask app that extracts text from PDFs, embeds it semantically and returns
+                            concise summaries and answers to questions about the document.
+                        </p>
+                        <p class="project-tags mono">Python · Flask · NLP · Embeddings<span class="gh-meta"
+                                data-gh-meta></span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mukesh360/Intern_projects" target="_blank" rel="noopener">Code <span>↗</span></a>
+                    </div>
+                </li>
+
+                <li class="project reveal" data-repo="Aniverse">
+                    <span class="project-idx mono">/05</span>
+                    <div class="project-main">
+                        <h3 class="project-title">Aniverse</h3>
+                        <p class="project-desc">
+                            A streaming-style landing site for anime trailers, focused on smooth,
+                            responsive layouts across screen sizes.
+                        </p>
+                        <p class="project-tags mono">HTML · CSS · JavaScript<span class="gh-meta" data-gh-meta></span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://aniversetrailer.netlify.app/" target="_blank" rel="noopener">Live <span>↗</span></a>
+                        <a href="https://github.com/mukesh360/Aniverse" target="_blank" rel="noopener">Code <span>↗</span></a>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="more-link reveal" href="https://github.com/mukesh360?tab=repositories" target="_blank"
+                rel="noopener">
+                All repositories on GitHub <span aria-hidden="true">↗</span>
+            </a>
+
+            <!-- Cursor-following project schematics (desktop only) -->
+            <div class="preview" aria-hidden="true">
+                <div class="preview-track">
+                    <!-- 01 DocIntel: agents with isolated stores -->
+                    <svg viewBox="0 0 320 220">
+                        <text class="pv-cap" x="20" y="28">AGENTS → ISOLATED STORES</text>
+                        <g class="pv-row" transform="translate(0 56)">
+                            <rect class="pv-box" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Legal</text>
+                            <path class="pv-ln" d="M116 15 H220" /><path class="pv-acc-ln" d="M212 10 L220 15 L212 20" />
+                            <ellipse class="pv-box" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                        </g>
+                        <g class="pv-row" transform="translate(0 106)">
+                            <rect class="pv-box pv-hi" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Study</text>
+                            <path class="pv-acc-ln" d="M116 15 H220 M212 10 L220 15 L212 20" />
+                            <ellipse class="pv-box pv-hi" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box pv-hi" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                        </g>
+                        <g class="pv-row" transform="translate(0 156)">
+                            <rect class="pv-box" x="20" width="96" height="30" rx="6" /><text class="pv-t" x="32" y="19">Project X</text>
+                            <path class="pv-ln" d="M116 15 H220" /><path class="pv-acc-ln" d="M212 10 L220 15 L212 20" />
+                            <ellipse class="pv-box" cx="262" cy="7" rx="36" ry="7" /><path class="pv-box" d="M226 7 V25 A36 7 0 0 0 298 25 V7" />
+                        </g>
+                    </svg>
+
+                    <!-- 02 PsychTrend: K-Means clusters -->
+                    <svg viewBox="0 0 320 220">
+                        <text class="pv-cap" x="20" y="28">K-MEANS · 3 CLUSTERS</text>
+                        <path class="pv-ln" d="M30 196 H300 M30 196 V48" />
+                        <circle class="pv-ring" cx="92" cy="140" r="34" />
+                        <circle class="pv-ring pv-hi" cx="196" cy="88" r="30" />
+                        <circle class="pv-ring" cx="250" cy="160" r="26" />
+                        <g class="pv-dots">
+                            <circle cx="80" cy="130" r="3" /><circle cx="98" cy="150" r="3" /><circle cx="105" cy="128" r="3" /><circle cx="84" cy="156" r="3" /><circle cx="70" cy="142" r="3" /><circle cx="110" cy="146" r="3" />
+                            <circle cx="244" cy="152" r="3" /><circle cx="258" cy="168" r="3" /><circle cx="262" cy="150" r="3" /><circle cx="240" cy="170" r="3" />
+                        </g>
+                        <g class="pv-dots pv-acc-fill">
+                            <circle cx="186" cy="80" r="3.5" /><circle cx="204" cy="96" r="3.5" /><circle cx="210" cy="78" r="3.5" /><circle cx="190" cy="100" r="3.5" /><circle cx="180" cy="90" r="3.5" /><circle cx="200" cy="70" r="3.5" />
+                        </g>
+                    </svg>
+
+                    <!-- 03 Minutes of Meeting: transcript → action items -->
+                    <svg viewBox="0 0 320 220">
+                        <text class="pv-cap" x="20" y="28">TRANSCRIPT → MINUTES</text>
+                        <g class="pv-ln">
+                            <path d="M20 62 H130 M20 80 H112 M20 98 H136 M20 116 H96 M20 134 H124 M20 152 H108 M20 170 H132 M20 188 H90" />
+                        </g>
+                        <path class="pv-acc-ln" d="M148 125 H176 M168 119 L176 125 L168 131" />
+                        <rect class="pv-box" x="190" y="56" width="112" height="140" rx="8" />
+                        <g transform="translate(204 82)">
+                            <path class="pv-acc-ln" d="M0 0 L4 4 L11 -4" /><path class="pv-ln" d="M20 0 H84" />
+                            <path class="pv-acc-ln" d="M0 30 L4 34 L11 26" /><path class="pv-ln" d="M20 30 H72" />
+                            <path class="pv-acc-ln" d="M0 60 L4 64 L11 56" /><path class="pv-ln" d="M20 60 H80" />
+                            <rect class="pv-box" x="0" y="84" width="11" height="11" rx="2" /><path class="pv-ln" d="M20 90 H64" />
+                        </g>
+                    </svg>
+
+                    <!-- 04 PDF Summarizer: page → summary -->
+                    <svg viewBox="0 0 320 220">
+                        <text class="pv-cap" x="20" y="28">PDF → SUMMARY</text>
+                        <path class="pv-box" d="M28 50 H104 L124 70 V198 H28 Z M104 50 V70 H124" />
+                        <g class="pv-ln">
+                            <path d="M40 86 H112 M40 98 H106 M40 110 H112 M40 122 H98 M40 134 H112 M40 146 H104 M40 158 H112 M40 170 H92 M40 182 H108" />
+                        </g>
+                        <path class="pv-acc-ln" d="M140 124 H170 M162 118 L170 124 L162 130" />
+                        <rect class="pv-box pv-hi" x="186" y="88" width="114" height="72" rx="8" />
+                        <g class="pv-acc-ln"><path d="M200 108 H284 M200 124 H270 M200 140 H246" /></g>
+                    </svg>
+
+                    <!-- 05 Aniverse: player -->
+                    <svg viewBox="0 0 320 220">
+                        <text class="pv-cap" x="20" y="28">TRAILER PLAYER</text>
+                        <rect class="pv-box" x="20" y="46" width="280" height="150" rx="10" />
+                        <circle class="pv-box pv-hi" cx="160" cy="112" r="24" />
+                        <path class="pv-acc-fill" d="M153 100 L172 112 L153 124 Z" />
+                        <path class="pv-ln" d="M36 176 H284" />
+                        <path class="pv-acc-ln pv-thick" d="M36 176 H140" />
+                        <circle class="pv-acc-fill" cx="140" cy="176" r="4" />
+                    </svg>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <!-- ===== 04 STACK ===== -->
+        <section id="stack" class="section wrap" data-animate>
+            <header class="sec-head">
+                <span class="sec-num mono">04</span>
+                <span class="sec-rule" aria-hidden="true"></span>
+                <h2 class="sec-title"><span>Stack</span></h2>
+                <p class="sec-sub">The tools I use, grouped by what they are for.</p>
+            </header>
+
+            <p class="stack-intro reveal">
+                Mostly AI: building, grounding and shipping it. The data and backend work exists to
+                make the AI part reliable.
+            </p>
+
+            <ol class="spec">
+                <li class="spec-row spec-row--ai reveal">
+                    <span class="spec-idx mono">01</span>
+                    <div class="spec-head">
+                        <h3>LLMs &amp; Retrieval</h3>
+                        <p>Grounded answers over private documents</p>
+                    </div>
+                    <ul class="spec-tools">
+                        <li>LangChain</li><li>RAG pipelines</li><li>Embeddings</li><li>ChromaDB</li>
+                        <li>Ollama</li><li>Gemini API</li><li>Prompt design</li>
+                    </ul>
+                    <p class="spec-used mono">Markus.ai · DocIntel AI · Minutes of Meeting AI</p>
+                </li>
+                <li class="spec-row spec-row--ai reveal">
+                    <span class="spec-idx mono">02</span>
+                    <div class="spec-head">
+                        <h3>Machine learning &amp; NLP</h3>
+                        <p>Models that find patterns in text and behaviour</p>
+                    </div>
+                    <ul class="spec-tools">
+                        <li>scikit-learn</li><li>Sentiment analysis</li><li>K-Means clustering</li>
+                        <li>Text summarisation</li><li>Pandas</li><li>NumPy</li>
+                    </ul>
+                    <p class="spec-used mono">PsychTrend · PDF Summarizer</p>
+                </li>
+                <li class="spec-row reveal">
+                    <span class="spec-idx mono">03</span>
+                    <div class="spec-head">
+                        <h3>Data engineering</h3>
+                        <p>Clean, dependable data for models to use</p>
+                    </div>
+                    <ul class="spec-tools">
+                        <li>SQL</li><li>ETL pipelines</li><li>Supabase / Postgres</li><li>MySQL</li><li>SQLite</li>
+                    </ul>
+                    <p class="spec-used mono">Markus.ai · DocIntel AI</p>
+                </li>
+                <li class="spec-row reveal">
+                    <span class="spec-idx mono">04</span>
+                    <div class="spec-head">
+                        <h3>Serving &amp; product</h3>
+                        <p>APIs and interfaces that put models in front of users</p>
+                    </div>
+                    <ul class="spec-tools">
+                        <li>Python</li><li>FastAPI</li><li>Flask</li><li>REST APIs</li><li>JavaScript / TypeScript</li>
+                    </ul>
+                    <p class="spec-used mono">Every project above</p>
+                </li>
+            </ol>
+
+            <p class="spec-also mono reveal">Also comfortable with: Java · C · Git &amp; GitHub · HTML &amp; CSS</p>
+        </section>
+
+
+        <!-- ===== 05 CONTACT ===== -->
+        <section id="contact" class="section wrap" data-animate>
+            <header class="sec-head">
+                <span class="sec-num mono">05</span>
+                <span class="sec-rule" aria-hidden="true"></span>
+                <h2 class="sec-title"><span>Contact</span></h2>
+                <p class="sec-sub">Open to conversations about data and AI work.</p>
+            </header>
+
+            <div class="contact-grid">
+                <div class="contact-copy">
+                    <p class="contact-big reveal">Have something in mind?<br><em>Let's talk.</em></p>
+                    <div class="email-row reveal">
+                        <a class="contact-email" href="mailto:mukesh360r@gmail.com">mukesh360r@gmail.com</a>
+                        <button class="copy-btn" type="button" data-copy="mukesh360r@gmail.com">Copy</button>
+                    </div>
+                    <dl class="contact-meta reveal">
+                        <div>
+                            <dt class="mono">Phone</dt>
+                            <dd><a href="tel:+918610448916">+91 86104 48916</a></dd>
+                        </div>
+                        <div>
+                            <dt class="mono">Location</dt>
+                            <dd>Bangalore, India</dd>
+                        </div>
+                        <div>
+                            <dt class="mono">Local time</dt>
+                            <dd><span data-clock></span> IST · <span data-availability>Replies within a day</span></dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <label>
+                        <span class="mono">Name</span>
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        <span class="mono">Email</span>
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>
+                        <span class="mono">Message</span>
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <div class="form-foot">
+                        <button type="submit" class="btn">Send message <span aria-hidden="true">→</span></button>
+                        <p class="form-note mono" aria-live="polite">Opens your mail app</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer-section text-center">
-        <div class="container">
-            <h3 class="footer-title mb-3">Mukesh Kumar R</h3>
-
-            <ul class="footer-nav list-inline mb-4">
-                <li class="list-inline-item"><a href="#home">Home</a></li>
-                <li class="list-inline-item"><a href="#about">About</a></li>
-                <li class="list-inline-item"><a href="#skills">Skills</a></li>
-                <li class="list-inline-item"><a href="#projects">Projects</a></li>
-                <li class="list-inline-item"><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="footer-social mb-3">
-                <a href="https://github.com/mukesh360" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mukeshkumar360" target="_blank" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://wa.me/918610448916" target="_blank" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-
-            <p class="footer-copy mb-0">&copy; 2026 Mukesh_360.</p>
-            <p class="footer-copy mb-0">All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="wrap footer-top">
+            <p class="footer-tag">Data &amp; AI Engineer · Bangalore, India</p>
+            <nav class="footer-links" aria-label="Elsewhere">
+                <a href="https://github.com/mukesh360" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/mukeshkumar360" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://codolio.com/profile/Mukesh_360" target="_blank" rel="noopener">Codolio</a>
+                <a href="mailto:mukesh360r@gmail.com">Email</a>
+                <a href="https://drive.google.com/drive/folders/1-S04FxanC22qKMmrHC989dE0iaqY432G?usp=sharing"
+                    target="_blank" rel="noopener">Résumé</a>
+            </nav>
         </div>
-
-        <!-- Scroll to Top Button -->
-        <a href="#home" class="back-to-top" aria-label="Back to top">
-            <i class="fa-solid fa-angle-up"></i>
-        </a>
+        <div class="wrap footer-inner">
+            <p class="mono">© <span data-year>2026</span> Mukesh Kumar R. All rights reserved.</p>
+            <p class="mono">Bangalore <span data-clock></span> IST</p>
+            <p class="mono" data-site-updated hidden></p>
+            <a class="mono" href="#top">Back to top ↑</a>
+        </div>
     </footer>
 
+    <!-- ===== COMMAND MENU (⌘K / Ctrl+K) ===== -->
+    <div class="cmdk" hidden>
+        <div class="cmdk-backdrop" data-cmdk-close></div>
+        <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command menu">
+            <div class="cmdk-search">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" /><path d="M13.5 13.5 L17 17" /></svg>
+                <input class="cmdk-input" type="text" placeholder="Jump to a section, open a link…" autocomplete="off"
+                    spellcheck="false" aria-label="Search commands" aria-controls="cmdkList">
+                <kbd>esc</kbd>
+            </div>
+            <ul class="cmdk-list" id="cmdkList" role="listbox"></ul>
+            <p class="cmdk-foot mono"><span>↑↓ navigate</span><span>↵ select</span></p>
+        </div>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="toast" role="status" aria-live="polite"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // ============================
-            // SCROLL SPY
-            // ============================
-            const sections = Array.from(document.querySelectorAll("section[id]"));
-            const navLinks = Array.from(document.querySelectorAll(".navbar-nav .nav-link"));
-
-            function getHeaderOffset() {
-                const nav = document.querySelector(".navbar");
-                return nav ? nav.offsetHeight + 10 : 10;
-            }
-
-            function activateForCurrentSection() {
-                const offset = getHeaderOffset();
-                const scrollPos = window.scrollY;
-                const docHeight = document.documentElement.scrollHeight;
-                const winBottom = window.innerHeight + scrollPos;
-
-                if (winBottom >= docHeight - 5) {
-                    setActiveLink(sections[sections.length - 1].id);
-                    return;
-                }
-
-                if (scrollPos <= 5) {
-                    setActiveLink(sections[0].id);
-                    return;
-                }
-
-                let currentId = null;
-                for (const sec of sections) {
-                    const top = sec.offsetTop - offset;
-                    const bottom = top + sec.offsetHeight;
-                    if (scrollPos >= top && scrollPos < bottom) {
-                        currentId = sec.id;
-                        break;
-                    }
-                }
-
-                if (!currentId) currentId = sections[0].id;
-                setActiveLink(currentId);
-            }
-
-            function setActiveLink(id) {
-                navLinks.forEach(link => {
-                    const href = link.getAttribute("href") || "";
-                    const linkHash = href.split("#")[1] || "";
-                    if (linkHash === id) {
-                        link.classList.add("active");
-                    } else {
-                        link.classList.remove("active");
-                    }
-                });
-            }
-
-            activateForCurrentSection();
-            window.addEventListener("scroll", activateForCurrentSection, { passive: true });
-            window.addEventListener("resize", activateForCurrentSection);
-
-
-            // ============================
-            // SCROLL-TRIGGERED ANIMATIONS
-            // ============================
-            const fadeElements = document.querySelectorAll('.fade-in-up');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
-
-            fadeElements.forEach(el => observer.observe(el));
-
-
-            // ============================
-            // SMOOTH NAVBAR BG ON SCROLL
-            // ============================
-            const navWrapper = document.querySelector('.nav-wrapper');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 60) {
-                    navWrapper.style.background = 'rgba(10, 10, 26, 0.85)';
-                    navWrapper.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.5)';
-                } else {
-                    navWrapper.style.background = 'rgba(255, 255, 255, 0.06)';
-                    navWrapper.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
-                }
-            }, { passive: true });
-        });
-    </script>
-
+    <a class="to-top" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15V5M5 10l5-5 5 5" /></svg>
+    </a>
 </body>
 
 </html>

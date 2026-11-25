@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found — Mukesh Kumar R</title>
+    <meta name="robots" content="noindex">
+    <script>
+        try {
+            const t = localStorage.getItem('theme');
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nf {
+            min-height: 100vh;
+            display: grid;
+            align-content: center;
+            gap: 20px;
+        }
+
+        .nf-code {
+            color: var(--accent);
+        }
+
+        .nf h1 {
+            font-weight: 600;
+            font-size: clamp(2.4rem, 6vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.045em;
+        }
+
+        .nf p {
+            color: var(--muted);
+            max-width: 44ch;
+        }
+
+        .nf .btn {
+            justify-self: start;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="nf wrap">
+        <p class="nf-code mono">Error 404</p>
+        <h1>This page doesn't exist<span class="accent-dot">.</span></h1>
+        <p>The link may be outdated or mistyped. Everything lives on the main page.</p>
+        <a class="btn" href="./">Back to the portfolio <span aria-hidden="true">→</span></a>
+    </main>
+</body>
+
+</html>
